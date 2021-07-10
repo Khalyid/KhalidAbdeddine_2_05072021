@@ -36,7 +36,7 @@ h1
 .formrecherche
 {
     background-color: #F2F2F2;
-    margin-right: 80%;
+    margin-right: 75%;
 }
                 .recherche .fas, .inputrechercher, .inputrecherche
                 {
@@ -48,11 +48,22 @@ h1
                     font-family: 'Raleway';
                     color: white;
                     height: 3em;
+                    font-size: 1em;
+                    border-radius: 0px 15px 15px 0px;
                 }
                 .fa-map-marker-alt
                 {
                     width: 2.5em;
                 }
+
+.btn
+{
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+}
 
 .btn .fas
 {
@@ -61,11 +72,17 @@ h1
 }
                 
             
-.fa-info-circle
+.fa-info
 {
-background-color: #0065FC;
-color: white;
+    color: #0065FC;
+    border: 2px solid gray;
+    font-size: 10px;
 }
+
+i {
+    border-radius: 50%;
+    padding: 10px;
+  }
 
 
                                 /* HEADER*/
