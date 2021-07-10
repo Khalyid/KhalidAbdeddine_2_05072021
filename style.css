@@ -3,12 +3,70 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+                                /* HEADER*/
+
+
+.logo
+{
+    width: 6em;
+    height: 4em;
+}
+
 .liensite
 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70%;
     color:#0065FC;
+    border: 3px black solid;
 }
 
 h1
 {
     font-size: 26px;
 }
+
+.formrecherche
+{
+    background-color: #F2F2F2;
+    margin-right: 80%;
+}
+                .recherche .fas, .inputrechercher, .inputrecherche
+                {
+                    height: 3em;
+                }
+                .inputsubmit
+                {
+                    background-color: #0065FC;
+                    font-family: 'Raleway';
+                    color: white;
+                    height: 3em;
+                }
+                .fa-map-marker-alt
+                {
+                    width: 2.5em;
+                }
+
+.btn .fas
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+                
+            
+.fa-info-circle
+{
+background-color: #0065FC;
+color: white;
+}
+
+
+                                /* HEADER*/
+

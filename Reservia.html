@@ -11,24 +11,25 @@
     <head/>
     <body>
         <header>
-            <img src="images/logo/Reservialogo.png" alt="Logo Reservia" title="Logo"/>
+            <img class=logo src="images/logo/Reservialogo.png" alt="Logo Reservia" title="Logo"/>
             
             <ul class="liensite">
-                <li><a href="#Hébergements">Hébergements</a></li>
-                <li><a href="#Activités">Activités</a></li>
-                <li><a href="page2.html">S'inscrire</a></li>
+                <li class="navhead"><a href="#Hébergements">Hébergements</a></li>
+                <li class="navhead"><a href="#Activités">Activités</a></li>
+                <li class="navhead"><a href="page2.html">S'inscrire</a></li>
             </ul>
 
         <h1>Trouvez votre hébergement pour des vacances de reves</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form method="post" action="traitement.php">
+        <form class="formrecherche"  method="post" action="traitement.php">
             <p>
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="ville" placeholder="Rechercher" />
-                <input type="submit" value="Rechercher" />
+                <input class="inputrechercher" type="text" name="ville" placeholder="Rechercher" />
+                <input class="inputsubmit" type="submit" value="Rechercher" />
             </p>
         </form>
+    
 
         <p>
             Filtres
