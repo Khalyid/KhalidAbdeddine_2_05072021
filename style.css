@@ -14,7 +14,7 @@ body
 }
 
 
-                                /* HEADER*/
+                                /* HEADER DEBUT*/
 
 .HautHeader
 {
@@ -32,7 +32,7 @@ body
 .liensite
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 20em;
     border: 1px black solid;
     color:#0065FC;
@@ -43,8 +43,6 @@ body
 {
     border-top: 2px #0065FC solid;
 }
-
-
 
 
 h1
@@ -114,5 +112,66 @@ h1
 
 
 
-                                /* HEADER*/
+                                /* HEADER FIN*/
+
+                                /*HEBERGEMENT MARSEILLE*/
+
+
+.hebergement 
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 80em;
+    padding: 1em;
+    padding-right: 3em;
+}
+.articlehebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articlehebergement img
+{
+    width: 15em;
+    height: 7em;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.imghebergement
+{
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.hebergement a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.asidepopulaire
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 1em;
+    width: 25em;
+}
+
+.asidepopulaire img
+{
+    width: 8em;
+    height: 7em;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.imgpopulaire
+{
+    display: flex;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+}
 
