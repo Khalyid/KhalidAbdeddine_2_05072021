@@ -11,35 +11,36 @@
     <head/>
     <body>
         <header>
-            <img class=logo src="images/logo/Reservialogo.png" alt="Logo Reservia" title="Logo"/>
-            
-            <ul class="liensite">
-                <li class="navhead"><a href="#Hébergements">Hébergements</a></li>
-                <li class="navhead"><a href="#Activités">Activités</a></li>
-                <li class="navhead"><a href="page2.html">S'inscrire</a></li>
-            </ul>
+            <div class="HautHeader">
+                <img class=logo src="images/logo/Reservialogo.png" alt="Logo Reservia" title="Logo"/> 
+                <ul class="liensite">
+                    <li class="navhead"><a href="#Hébergements">Hébergements</a></li>
+                    <li class="navhead"><a href="#Activités">Activités</a></li>
+                    <li class="navhead"><a href="page2.html">S'inscrire</a></li>
+                </ul>
+            </div>
 
-        <h1>Trouvez votre hébergement pour des vacances de reves</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+            <h1>Trouvez votre hébergement pour des vacances de reves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
 
-        <form class="formrecherche"  method="post" action="traitement.php">
+            <form class="formrecherche"  method="post" action="traitement.php">
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input class="inputrechercher" type="text" name="ville" placeholder="Rechercher" />
+                    <input class="inputsubmit" type="submit" value="Rechercher" />
+                </p>
+            </form>
+        
+
             <p>
-                <i class="fas fa-map-marker-alt"></i>
-                <input class="inputrechercher" type="text" name="ville" placeholder="Rechercher" />
-                <input class="inputsubmit" type="submit" value="Rechercher" />
+                Filtres
             </p>
-        </form>
-    
+            <button class="btn"><i class="fas fa-money-bill-wave-alt"></i>Economique</button>
+            <button class="btn"><i class="fas fa-child"></i>Familial</button>
+            <button class="btn"><i class="fas fa-heart"></i>Romantique</button>
+            <button class="btn"><i class="fas fa-dog"></i>Animaux autorisés</button>
 
-        <p>
-            Filtres
-        </p>
-        <button class="btn"><i class="fas fa-money-bill-wave-alt"></i>Economique</button>
-        <button class="btn"><i class="fas fa-child"></i>Familial</button>
-        <button class="btn"><i class="fas fa-heart"></i>Romantique</button>
-        <button class="btn"><i class="fas fa-dog"></i>Animaux autorisés</button>
-
-        <p><i class="fas fa-info"></i> Plus de 500 logements sont disponible dans cette ville</p>
+            <p><i class="fas fa-info"></i> Plus de 500 logements sont disponible dans cette ville</p>
         </header>
 
         <section>
