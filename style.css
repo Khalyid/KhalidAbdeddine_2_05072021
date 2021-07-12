@@ -85,9 +85,9 @@ h1
 .btn
 {
     background-color: white;
-    border: 2px solid gray;
+    border: 2px solid rgb(217, 217, 217);
     border-radius: 50px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -103,7 +103,7 @@ h1
 .fa-info
 {
     color: #0065FC;
-    border: 2px solid gray;
+    border: 2px solid rgb(217, 217, 217);
     font-size: 10px;
     border-radius: 50%;
     padding: 10px;
@@ -116,14 +116,19 @@ h1
 
                                 /*HEBERGEMENT MARSEILLE*/
 
-
+.blochebergement
+{
+    display: flex;
+    flex-direction: row;
+}
 .hebergement 
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 80em;
+    width: 70%;
     padding: 1em;
-    padding-right: 3em;
+    margin-right: 2em;
+    
 }
 .articlehebergement
 {
@@ -174,4 +179,24 @@ h1
     padding: 7px;
     border-radius: 15px;
 }
+
+.activite 
+{
+    display: flex;
+}
+
+.imgactivite
+{
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px rgb(217, 217, 217);
+
+}
+
+.activite img
+{
+    width: 15em;
+    height: 7em;
+    border-radius: 15px 15px 0px 0px;;
+}
+
 
