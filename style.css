@@ -1,6 +1,7 @@
 *
 {
     font-family: 'Raleway', sans-serif;
+    list-style: none;
 }
 
 a
@@ -9,9 +10,10 @@ a
 }
 body
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
+
 
 
                                 /* HEADER DEBUT*/
@@ -32,21 +34,25 @@ body
 {
     display: flex;
     justify-content: space-between;
-    padding-left: 20em;
-    list-style: none;
+    padding-left: 15em;
 }
+
 
 .navhead
 {
     padding: 2em;
     font-weight: bold;
-    
 }
 
-.HautHeader a:hover
+.navhead a
+{
+    color: black;
+}
+.navhead a:hover
 {
     border-top: 2px #0065FC solid;
     padding: 2em;
+    color: #0065FC;
 }
 
 
@@ -59,6 +65,10 @@ h1
 {
     
     margin-right: 75%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: fit-content;
+    white-space: nowrap;
 }
                 .recherche .fas, .inputrechercher, .inputsubmit
                 {
@@ -68,6 +78,10 @@ h1
                 .inputrechercher
                 {
                     border: 1px #F2F2F2 solid;
+                    font-weight: bold;
+                    font-size: 1em;
+                    text-decoration: black;
+                    width: fit-content;
                 }
                 .inputsubmit
                 {
@@ -84,6 +98,7 @@ h1
                     width: 2.5em;
                     background-color: #F2F2F2;
                     padding: 1em;
+                    width: fit-content;
                     border-radius: 15px 0px 0px 15px;
                 }
 
@@ -91,17 +106,22 @@ h1
 {
     background-color: white;
     border: 2px solid rgb(217, 217, 217);
-    border-radius: 50px;
-    font-size: 1.2em;
+    border-radius: 35px;
+    font-size: 1em;
     font-weight: bold;
+    border-left: none;
+    padding-left: 0em;
+    padding-right: 1.5em;
 }
 
 .btn .fas
 {
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 50%;
+    border-radius: 35px;
     padding: 10px;
+    margin-right: 1em;
+    font-size: 20px;
 }
                 
             
@@ -125,12 +145,14 @@ h1
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .hebergement 
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 70%;
+    width: 65em;
     padding: 1em;
     margin-right: 2em;
     
@@ -139,6 +161,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .articlehebergement img
@@ -153,6 +176,7 @@ h1
     background-color: white;
     padding: 7px;
     border-radius: 15px;
+    box-shadow: 1px 2px 20px rgb(217, 217, 217);
 }
 
 .hebergement a
@@ -161,6 +185,9 @@ h1
     font-weight: bold;
     font-size: 1em;
 }
+
+
+/* -------------------------- PLUS POPULAIRE ------------------------------------------ */
 
 .asidepopulaire
 {
@@ -183,19 +210,26 @@ h1
     background-color: white;
     padding: 7px;
     border-radius: 15px;
+    box-shadow: 1px 2px 10px rgb(217, 217, 217);
+
 }
+
+/*-----------------------------------ACTIVITE---------------------------------------------*/
+
 
 .activite 
 {
     display: flex;
-    
+    justify-content: center;
+    border: 1px black solid;
+    width: 1680px;
 }
 
 .imgactivite
 {
     border-radius: 15px;
     box-shadow: 1px 2px 10px rgb(217, 217, 217);
-
+    height: 10em;
 }
 
 .activite img
@@ -205,4 +239,13 @@ h1
     border-radius: 15px 15px 0px 0px;;
 }
 
+/* --------------------------------FOOTER---------------------------------------- */
 
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    background-color: #F2F2F2;
+    text-align: left;
+}
