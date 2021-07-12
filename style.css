@@ -26,7 +26,6 @@ body
 {
     width: 6em;
     height: 4em;
-    border: 1px red solid;
 }
 
 .liensite
@@ -34,14 +33,20 @@ body
     display: flex;
     justify-content: space-between;
     padding-left: 20em;
-    border: 1px black solid;
-    color:#0065FC;
     list-style: none;
+}
+
+.navhead
+{
+    padding: 2em;
+    font-weight: bold;
+    
 }
 
 .HautHeader a:hover
 {
     border-top: 2px #0065FC solid;
+    padding: 2em;
 }
 
 
@@ -183,6 +188,7 @@ h1
 .activite 
 {
     display: flex;
+    
 }
 
 .imgactivite
