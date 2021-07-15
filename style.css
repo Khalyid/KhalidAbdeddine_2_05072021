@@ -8,7 +8,8 @@ a
 {
     text-decoration: none;
 }
-body
+
+.blocpage
 {
     width: 90%;
     margin: auto;
@@ -16,34 +17,47 @@ body
 
 h3
 {
-    
+    margin-top: 0;
 }
+
 
                                 /* HEADER DEBUT*/
-
-.HautHeader
+.hautheader
 {
     display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-
+.hautheader div:nth-child(2)
+{
+    flex: 1;
+    justify-content: flex-end;
+    border: 1px violet solid;
+}
 
 .logo
 {
     width: 6em;
     height: 4em;
+    padding-top: 2em;
+    border: 1px black solid
+}
+
+.blocnav
+{
+    display: flex;
 }
 
 .liensite
 {
     display: flex;
-    justify-content: space-between;
-    padding-left: 15em;
 }
 
 .inscrire
 {
+    display: flex;
+    position: relative;
     padding: 2em;
     font-weight: 900;
 }
@@ -59,6 +73,7 @@ h3
 {
     padding: 2em;
     font-weight: bold;
+    border: 1px blue dashed;
 }
 
 .navhead a
@@ -119,8 +134,24 @@ h1
                     border-radius: 15px 0px 0px 15px;
                 }
 
+.filtreslist
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtres
+{
+    font-weight: bold;
+    margin-right: 3em;
+}
+.button
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 .btn
 {
+    
     background-color: white;
     border: 2px solid rgb(217, 217, 217);
     border-radius: 35px;
@@ -129,6 +160,7 @@ h1
     border-left: none;
     padding-left: 0em;
     padding-right: 1.5em;
+    margin-right: 3em;
 }
 
 .btn .fas
@@ -180,7 +212,7 @@ h1
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 65em;
+    width: 60em;
     padding: 1em;
     margin-right: 2em;;
     
@@ -194,9 +226,10 @@ h1
 
 .articlehebergement img
 {
-    width: 15em;
+    width: 14em;
     height: 7em;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .imghebergement
@@ -204,14 +237,26 @@ h1
     background-color: white;
     padding: 7px;
     border-radius: 15px;
-    box-shadow: 1px 2px 20px rgb(217, 217, 217);
+    box-shadow: 0px 0px 20px rgb(217, 217, 217);
 }
 
-.hebergement a
+.descriptionimghebergement
+{
+    padding-left: 5px;
+}
+
+.afficher 
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+.afficherplus
 {
     color: black;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.3em;
+    
 }
 
 
@@ -224,14 +269,15 @@ h1
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 1em;
-    width: 25em;
+    width: 28em;
 }
 
 .asidepopulaire img
 {
-    width: 8em;
-    height: 7em;
+    width: 9em;
+    height: 8em;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
 }
 
 .imgpopulaire
@@ -246,15 +292,18 @@ h1
 
 .descriptionimgpopulaire
 {
-    padding-left: 10px;
+  
+    padding-left: 15px;
+    font-size: 100%;
+    height: 8em;
 }
+
 /*-----------------------------------ACTIVITE---------------------------------------------*/
 
 .activite
 {
     display: flex;
     flex-wrap: wrap;
-    border: 1px black solid;
     height: fit-content;
     width: 100%;
 
@@ -367,7 +416,7 @@ h1
 footer
 {
     display: flex;
-    justify-content: space-between;
+  
     padding: 3em;
     background-color: #F2F2F2;
     text-align: left;
@@ -381,5 +430,66 @@ footer ul
 footer li
 {
     margin-bottom: 10px;
+    margin-right: 400px;
+    white-space: nowrap;
 }
 
+@media screen and (max-width: 600px)
+{
+    .blocpage
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .hautheader div:nth-child(2)
+    {
+        flex: 1;
+        justify-content: center;
+        border: 1px violet solid;
+    }
+
+        .blochebergement
+    {
+        flex-wrap: wrap-reverse;
+    }
+    .hebergement 
+    {
+        background-color: white;
+      
+        
+    }
+        .articlehebergement img
+    {
+        width: 330px;
+        height: 10em;
+    }
+        .asidepopulaire
+    {
+        border-radius: 0px;
+        
+    }
+        .descriptionimgpopulaire
+        {
+            font-size: 100%;
+        }
+
+        .asidepopulaire img
+        {
+            width: 8em;
+            height: 10em;
+        }
+
+
+        .activite img
+{
+    height: 10em; 
+
+}      
+
+footer
+{
+    flex-direction: column;
+ 
+}
+}
