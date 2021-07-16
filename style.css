@@ -15,9 +15,21 @@ a
     margin: auto;
 }
 
+
+
+ul
+{
+    padding: 0;
+}
+
 h3
 {
     margin-top: 0;
+}
+
+.prix
+{
+    font-size: bold;
 }
 
 
@@ -33,7 +45,7 @@ h3
 {
     flex: 1;
     justify-content: flex-end;
-    border: 1px violet solid;
+    
 }
 
 .logo
@@ -41,7 +53,7 @@ h3
     width: 6em;
     height: 4em;
     padding-top: 2em;
-    border: 1px black solid
+    
 }
 
 .blocnav
@@ -57,7 +69,8 @@ h3
 .inscrire
 {
     display: flex;
-    position: relative;
+  
+    top: 0; left: 0;
     padding: 2em;
     font-weight: 900;
 }
@@ -73,7 +86,7 @@ h3
 {
     padding: 2em;
     font-weight: bold;
-    border: 1px blue dashed;
+    text-align: center;
 }
 
 .navhead a
@@ -125,6 +138,18 @@ h1
                     font-size: 1em;
                     border-radius: 0px 15px 15px 0px;
                 }
+                
+                .submiticon
+                {
+                    background-color: #0065FC;
+                    border: 1px #0065FC solid;
+                    font-family: 'Raleway';
+                    color: white;
+                    height: 3em;
+                    font-size: 1em;
+                    border-radius: 15px 15px 15px 15px;
+                    width: 50px;
+                }
                 .fa-map-marker-alt
                 {
                     width: 2.5em;
@@ -139,16 +164,19 @@ h1
     display: flex;
     flex-wrap: wrap;
 }
+
 .filtres
 {
     font-weight: bold;
     margin-right: 3em;
 }
+
 .button
 {
     display: flex;
     flex-wrap: wrap;
 }
+
 .btn
 {
     
@@ -221,7 +249,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    
 }
 
 .articlehebergement img
@@ -272,6 +300,17 @@ h1
     width: 28em;
 }
 
+.titrepopulaire
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-chart-line
+{
+    font-size: 2em;
+    margin: 1em;
+}
 .asidepopulaire img
 {
     width: 9em;
@@ -366,19 +405,19 @@ h1
 }        
 .imgpomegues        
 {
-    max-height: 200px;
+    height: 200px;
     object-fit: cover;
 }
      
 .imgfrioul
 {
-    max-height: 100px;
+    height: 100px;
     object-fit: cover;
 }
 
 .imgnotredame
 {
-    max-height: 139px;
+    height: 139px;
     object-fit: cover;
 }
 
@@ -422,16 +461,25 @@ footer
     text-align: left;
 }
 
-footer ul
-{
-    padding-left: 0;
-}
 
 footer li
 {
     margin-bottom: 10px;
     margin-right: 400px;
     white-space: nowrap;
+}
+
+
+
+
+/* ----------------------- MEDIA QUERIES ------------------------ */
+
+@media  screen and (min-width: 600px) and (max-width: 2000px)
+{
+    .submiticon
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -445,51 +493,106 @@ footer li
     .hautheader div:nth-child(2)
     {
         flex: 1;
+        order: 3;
         justify-content: center;
-        border: 1px violet solid;
     }
 
-        .blochebergement
+    .hautheader
+    {
+        justify-content: space-between;
+    }
+
+    .hautheader div:nth-child(3)
+    {
+        justify-content: flex-end;
+    }
+
+    .blocnav
+    {
+        width: 100%;
+    }
+
+    .liensite
+    {
+        border-bottom: 2px solid rgb(217, 217, 217);
+        width: 100%;        
+    }
+
+    .navhead
+    { 
+        padding: 1em;
+        font-weight: bold;
+        width: 50%;
+    }
+
+    .navhead:hover
+    {
+        border-bottom: 3px #0065FC solid;
+        border-top: 0;
+        color: #0065FC;
+    }
+
+    .navhead a:hover
+    {
+        border-top: 0px #0065FC solid;
+        padding: 0;
+        color: none;
+    }
+
+    .inputsubmit
+    {
+        display: none;
+    }
+    .btn
+    {
+        margin-bottom: 1em;
+    }
+
+    .blochebergement
     {
         flex-wrap: wrap-reverse;
     }
+
     .hebergement 
     {
-        background-color: white;
-      
-        
+        background-color: white;   
     }
-        .articlehebergement img
+
+    .inputsubmit
+    {
+        visibility: hidden;
+    }
+
+    .articlehebergement img
     {
         width: 330px;
         height: 10em;
     }
+
         .asidepopulaire
     {
         border-radius: 0px;
-        
     }
-        .descriptionimgpopulaire
-        {
-            font-size: 100%;
-        }
 
-        .asidepopulaire img
-        {
-            width: 8em;
-            height: 10em;
-        }
+    .descriptionimgpopulaire
+    {
+        font-size: 100%;
+    }
+
+    .asidepopulaire img
+    {
+        width: 8em;
+        height: 10em;
+    }
 
 
-        .activite img
-{
-    height: 10em; 
+    .activite img
+    {
+        height: 10em; 
+    }      
 
-}      
-
-footer
-{
-    flex-direction: column;
- 
-}
+    footer
+    {
+        flex-direction: column;
+    }
 }
