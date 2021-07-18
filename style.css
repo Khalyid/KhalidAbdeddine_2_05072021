@@ -11,6 +11,7 @@ a
 
 .blocpage
 {
+
     width: 90%;
     margin: auto;
 }
@@ -39,20 +40,16 @@ h3
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-}
-
-.hautheader div:nth-child(2)
-{
-    flex: 1;
-    justify-content: flex-end;
     
 }
+
 
 .logo
 {
     width: 6em;
     height: 4em;
     padding-top: 2em;
+    float: left;
     
 }
 
@@ -69,8 +66,6 @@ h3
 .inscrire
 {
     display: flex;
-  
-    top: 0; left: 0;
     padding: 2em;
     font-weight: 900;
 }
@@ -87,6 +82,12 @@ h3
     padding: 2em;
     font-weight: bold;
     text-align: center;
+    width: 50%;
+}
+.hautheader div:nth-child(2)
+{
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .navhead a
@@ -110,7 +111,7 @@ h1
 {
     
     margin-right: 75%;
-    background-color: #F2F2F2;
+    
     border-radius: 15px;
     width: fit-content;
     white-space: nowrap;
@@ -137,6 +138,8 @@ h1
                     height: 3em;
                     font-size: 1em;
                     border-radius: 0px 15px 15px 0px;
+                    position: relative;
+                    right : 5px;
                 }
                 
                 .submiticon
@@ -157,7 +160,11 @@ h1
                     padding: 1em;
                     width: fit-content;
                     border-radius: 15px 0px 0px 15px;
+                    position: relative;
+                    left: 5px;
                 }
+
+              
 
 .filtreslist
 {
@@ -226,7 +233,9 @@ h1
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
 }
 
 .etoilebleu
@@ -244,15 +253,23 @@ h1
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 60em;
     padding: 1em;
-    margin-right: 2em;;
+    margin: 1em;
+    width: 64em;
     
+}
+
+.rangehebergement
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .articlehebergement
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -270,6 +287,13 @@ h1
     padding: 7px;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgb(217, 217, 217);
+    
+
+}
+
+.imghebergement:hover
+{
+    background-color: rgb(217, 217, 217);
 }
 
 .descriptionimghebergement
@@ -294,14 +318,21 @@ h1
 
 /* -------------------------- PLUS POPULAIRE ------------------------------------------ */
 
-.asidepopulaire
+aside
 {
-    display: flex;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 1em;
     width: 28em;
+    margin: 1em;
+    
+}
+.asidepopulaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
 
 .titrepopulaire
@@ -333,9 +364,14 @@ h1
 
 }
 
+.imgpopulaire:hover
+{
+    background-color: rgb(217, 217, 217);
+}
+
+
 .descriptionimgpopulaire
 {
-  
     padding-left: 15px;
     font-size: 100%;
     height: 8em;
@@ -347,6 +383,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: fit-content;
     width: 100%;
 
@@ -361,7 +398,11 @@ h1
 {
     box-shadow: 0px 0px 10px rgb(217, 217, 217);
     border-radius: 15px;
- 
+}
+
+.grandeimage:hover , .pomegues:hover , .frioul:hover , .notredame:hover , .longchamp:hover 
+{
+    background-color: rgb(217, 217, 217);
 }
 
 .doubleimage
@@ -375,15 +416,12 @@ h1
             box-shadow: 0px 0px 10px rgb(217, 217, 217);
             border-radius: 15px;
             margin-bottom: 65px;
-           
         }
 
         .frioul
         {
             box-shadow: 0px 0px 10px rgb(217, 217, 217);
             border-radius: 15px;
-            
-            
         }
 
         .notredame
@@ -478,25 +516,89 @@ footer li
 
 /* ----------------------- MEDIA QUERIES ------------------------ */
 
-@media  screen and (min-width: 600px) and (max-width: 2000px)
+
+
+
+
+
+@media  screen and (min-width: 667px) and (max-width: 1750px)
+
 {
+    /*Header*/
+
     .submiticon
     {
         display: none;
     }
+    
+    /*Hebergement*/ 
+
+    .hebergement
+    {
+        width: 100%;
+    }
+
+    .articlehebergement img
+    {
+        width: 20em;
+        height: 10em;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+
+
+
+    /*Populaire*/
+    aside
+    {
+        width: 100%;
+
+    } 
+    .asidepopulaire
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }    
+
+    .imgpopulaire
+    {
+        flex-direction: column;
+    }
+
+    .asidepopulaire img
+    {
+        width: 100%;
+        height: 10em;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    
+    }
+
+    .descriptionimgpopulaire
+    {
+        padding-left: 0;
+        font-size: 100%;
+        height: 8em;
+    }
 }
 
-@media screen and (max-width: 600px)
+
+@media screen and (min-width:375px) and (max-width: 667px)
 {
+    
     .blocpage
     {
         width: 100%;
         margin: auto;
     }
 
+    /*Header*/
+
+  
     .hautheader div:nth-child(2)
     {
-        flex: 1;
+        flex: 100%;
         order: 3;
         justify-content: center;
     }
@@ -506,20 +608,11 @@ footer li
         justify-content: space-between;
     }
 
-    .hautheader div:nth-child(3)
-    {
-        justify-content: flex-end;
-    }
-
-    .blocnav
-    {
-        width: 100%;
-    }
-
     .liensite
     {
         border-bottom: 2px solid rgb(217, 217, 217);
-        width: 100%;        
+        width: 100%;
+               
     }
 
     .navhead
@@ -527,6 +620,7 @@ footer li
         padding: 1em;
         font-weight: bold;
         width: 50%;
+        
     }
 
     .navhead:hover
@@ -547,10 +641,19 @@ footer li
     {
         display: none;
     }
+
+    .submiticon
+    {
+        position: relative;
+        right: 20px;
+    }
+
     .btn
     {
         margin-bottom: 1em;
     }
+
+    /*Hebergement*/
 
     .blochebergement
     {
@@ -562,10 +665,7 @@ footer li
         background-color: white;   
     }
 
-    .inputsubmit
-    {
-        visibility: hidden;
-    }
+ 
 
     .articlehebergement img
     {
@@ -573,9 +673,12 @@ footer li
         height: 10em;
     }
 
-        .asidepopulaire
+    /*Populaire*/
+
+    aside
     {
         border-radius: 0px;
+        margin: 0;
     }
 
     .descriptionimgpopulaire
