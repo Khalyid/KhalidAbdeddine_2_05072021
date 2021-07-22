@@ -387,13 +387,18 @@ aside
     flex-direction: column;
     justify-content: center;
 }
+
 .activite
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
 
+.test
+{
+    display: flex;
 }
 
 .doubleimage , .grandeimage
@@ -676,7 +681,7 @@ footer li
 
     .articlehebergement img
     {
-        width: 100%;
+        width: 75vw;
         height: 10em;
     }
 
@@ -705,16 +710,18 @@ footer li
 
 /* Activité */
 
-
+    .activite
+    {
+        padding-left: 0;
+    }
     .activite img
     {
-        width: 100%;
+        width: 75vw;
         height: 10em; 
-    }      
-
+    }
+    
     footer
     {
         flex-direction: column;
     }
 }
-
