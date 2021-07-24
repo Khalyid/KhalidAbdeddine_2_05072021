@@ -346,9 +346,10 @@ aside
     font-size: 1.6em;
     margin: 1em;
 }
+
 .asidepopulaire img
 {
-    width: 25vh;
+    width: 10vw;
     height: 9em;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
@@ -559,11 +560,20 @@ footer li
         width: 100%;
     }
 
+    .articlehebergement
+    {
+        justify-content: center;
+    }
+
+    .imghebergement
+    {
+        margin: 2em;
+    }
     
 
     .articlehebergement img
     {
-        width: 40vh;
+        width: 37vw;
         height: 10em;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
@@ -691,7 +701,7 @@ footer li
 
     .articlehebergement img
     {
-        width: 75vw;
+        width: 90vw;
         height: 10em;
     }
 
@@ -715,6 +725,8 @@ footer li
         width: 50%;
         height: 10em;
     }
+    
+    
 
   
 
