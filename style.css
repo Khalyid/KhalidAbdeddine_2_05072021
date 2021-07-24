@@ -456,7 +456,7 @@ aside
 
 .activite img
 {
-    width: 300px;
+    width: 20vw;
     border-radius: 15px 15px 0 0; 
 
 }        
@@ -611,6 +611,10 @@ footer li
         background-color: white;   
     }
     
+    .activite img
+    {
+        width: 40vw;
+    }
   
 
 }
