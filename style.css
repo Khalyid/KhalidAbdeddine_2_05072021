@@ -531,7 +531,7 @@ footer li
 
 
 
-@media  screen  and (min-width : 1500px) and (max-width: 2000px)
+@media  screen  and (min-width : 1450px) and (max-width: 2000px)
 {
      /*Header*/
 
@@ -543,7 +543,7 @@ footer li
 }
 
 
-@media  screen  and (min-width : 950px) and (max-width: 1500px)
+@media  screen  and (min-width : 950px) and (max-width: 1450px)
 
 {
     /*Header*/
