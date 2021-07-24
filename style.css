@@ -9,10 +9,10 @@ a
     text-decoration: none;
 }
 
-.blocpage
+.blocpag
 {
 
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -259,21 +259,21 @@ h1
     border-radius: 15px;
     padding: 1em;
     margin: 1em;
-    width: 60%;
-    
+    margin-left: 0;
+    flex:1;
 }
 
 .articlehebergement
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+   justify-content: space-between;
 }
 
-.imghebergement img
+.articlehebergement img
 {
-    width: 14em;
-    height: 7em;
+    width: 17vw;
+    height: 10em;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -284,8 +284,9 @@ h1
     padding: 5px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(217, 217, 217);
+    margin-left: 0;
+    margin-right: 1em;
     
-
 }
 
 .imghebergement:hover
@@ -323,6 +324,7 @@ aside
     border-radius: 15px;
     padding: 1em;
     margin: 1em;
+    width: fit-content;
     
 }
 .asidepopulaire
@@ -346,7 +348,7 @@ aside
 }
 .asidepopulaire img
 {
-    width: 9em;
+    width: 25vh;
     height: 9em;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
@@ -528,7 +530,7 @@ footer li
 
 
 
-@media  screen  and (min-width : 1630px) and (max-width: 2000px)
+@media  screen  and (min-width : 1500px) and (max-width: 2000px)
 {
      /*Header*/
 
@@ -540,7 +542,7 @@ footer li
 }
 
 
-@media  screen  and (min-width : 950px) and (max-width: 1630px)
+@media  screen  and (min-width : 950px) and (max-width: 1500px)
 
 {
     /*Header*/
@@ -561,7 +563,7 @@ footer li
 
     .articlehebergement img
     {
-        width: 21em;
+        width: 40vh;
         height: 10em;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
@@ -569,9 +571,17 @@ footer li
 
     /*Populaire*/
 
-
+    aside 
+    {
+        margin-left: 0;
+        
+    }
   
-
+    .asidepopulaire img
+    {
+        width: 17vh;
+        height: 9em;
+    }
     .asidepopulaire
     {
         flex-direction: row;
