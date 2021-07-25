@@ -272,7 +272,7 @@ h1
 
 .articlehebergement img
 {
-    width: 17vw;
+    width: 16vw;
     height: 10em;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -395,8 +395,7 @@ aside
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .test
@@ -406,7 +405,7 @@ aside
 
 .doubleimage , .grandeimage
 {
-    margin: 2em; 
+    margin: 1em; 
 }
 
 .grandeimage
@@ -456,10 +455,10 @@ aside
 
 .activite img
 {
-    width: 20vw;
+    width: 21vw;
     border-radius: 15px 15px 0 0; 
-
 }        
+
 .imgpomegues        
 {
     height: 200px;
@@ -504,7 +503,10 @@ aside
     padding-left: 1em;
 }
 
-
+.activite h3
+{
+    font-size: 1em;
+}
 
 
 /* --------------------------------FOOTER---------------------------------------- */
@@ -529,9 +531,12 @@ footer li
 
 /* ----------------------- MEDIA QUERIES ------------------------ */
 
+    
 
 
-@media  screen  and (min-width : 1450px) and (max-width: 2000px)
+
+
+@media  screen  and (min-width : 1150px) 
 {
      /*Header*/
 
@@ -543,11 +548,10 @@ footer li
 }
 
 
-@media  screen  and (min-width : 950px) and (max-width: 1450px)
+@media  screen  and (min-width : 950px) and (max-width: 1150px)
 
 {
     /*Header*/
-
     .submiticon
     {
         display: none;
@@ -689,18 +693,23 @@ footer li
     .hebergement 
     {
         background-color: white; 
-        padding: 0;
-        margin: 0;  
         width: 100%;
     }
 
-
+    .hebergement h1, .afficher
+    {
+        margin-left: 10px;
+    }
     .articlehebergement
     {
         display: flex;
         flex-wrap: wrap;
     }
 
+    .imghebergement
+    {
+        margin-left: 10px;
+    }
  
 
     .articlehebergement img
@@ -717,6 +726,17 @@ footer li
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+
+    .titrepopulaire
+    {
+        margin-left: 10px;
+    }
+
+    .imgpopulaire
+    {
+        margin-left: 10px;
+        width: 85vw;
     }
 
     .descriptionimgpopulaire
@@ -738,13 +758,25 @@ footer li
 
     .activite
     {
-        padding-left: 0;
+        justify-content: flex-start;
     }
+
     .activite img
     {
-        width: 75vw;
+        width: 90vw;
         height: 10em; 
     }
+    
+    .grandeimage
+    {
+        margin-left: 10px;
+    }
+
+    .doubleimage
+    {
+        margin-left: 10px;
+    }
+
     
     footer
     {
