@@ -52,9 +52,6 @@ h2
     width: 9em;
     height: 4em;
     padding-top: 1.5em;
-    float: left;
-    object-fit: cover;
-
 }
 
 .blocnav
@@ -513,13 +510,22 @@ aside
 
 footer
 {
-    display: flex;
-    justify-content: space-between ;
-    padding: 3em;
     background-color: #F2F2F2;
-    text-align: left;
 }
 
+.footernav
+{
+    display: flex;
+    justify-content: space-between ;
+    text-align: left;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+.footerapropos, .footerhebergement, .footerassistance
+{
+    margin: 10px;
+}
 
 footer li
 {
@@ -714,7 +720,7 @@ footer li
 
     .articlehebergement img
     {
-        width: 90vw;
+        width: 88vw;
         height: 10em;
     }
 
@@ -763,7 +769,7 @@ footer li
 
     .activite img
     {
-        width: 90vw;
+        width: 88vw;
         height: 10em; 
     }
     
