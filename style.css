@@ -7,10 +7,6 @@ a {
   text-decoration: none;
 }
 
-.blocpag {
-  width: 80%;
-  margin: auto;
-}
 
 ul {
   padding: 0;
@@ -20,9 +16,7 @@ ul {
   font-weight: bold;
 }
 
-h2 {
-  font-weight: 900;
-}
+
 
 /* HEADER DEBUT*/
 .hautheader {
@@ -320,9 +314,7 @@ aside {
   justify-content: space-around;
 }
 
-.test {
-  display: flex;
-}
+
 
 .doubleimage,
 .grandeimage {
