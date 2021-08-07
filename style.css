@@ -7,7 +7,6 @@ a {
   text-decoration: none;
 }
 
-
 ul {
   padding: 0;
 }
@@ -15,8 +14,6 @@ ul {
 .prix {
   font-weight: bold;
 }
-
-
 
 /* HEADER DEBUT*/
 .hautheader {
@@ -136,6 +133,7 @@ h1 {
 .filtres {
   font-weight: 900;
   margin-right: 3em;
+  margin-top: 1.5em;
 }
 
 .button {
@@ -146,21 +144,27 @@ h1 {
 .btn {
   background-color: white;
   border: 2px solid rgb(217, 217, 217);
-  border-radius: 35px;
+  border-radius: 40px;
   font-size: 1em;
   font-weight: 900;
   border-left: none;
   padding-left: 0;
   padding-right: 1.5em;
-  margin-right: 3em;
+  margin-right: 2vw;
+  margin-top: 10px;
+}
+
+.test {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .btn .fas {
   color: #0065fc;
   background-color: #deebff;
   border-radius: 35px;
-  padding: 10px;
-  margin-right: 1em;
+  padding: 15px;
+  margin-right: 0.5em;
   font-size: 20px;
 }
 
@@ -174,6 +178,13 @@ h1 {
   font-size: 11px;
   border-radius: 50%;
   padding: 8px 10px 8px 10px;
+  height: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
 }
 
 /* HEADER FIN*/
@@ -280,6 +291,7 @@ aside {
 
 .imgpopulaire {
   display: flex;
+
   background-color: white;
   padding: 5px;
   border-radius: 15px;
@@ -296,7 +308,7 @@ aside {
   justify-content: space-between;
   padding-left: 15px;
   font-size: 90%;
-  height: 8em;
+  height: 10em;
   margin-top: -1em;
 }
 
@@ -313,8 +325,6 @@ aside {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
 
 .doubleimage,
 .grandeimage {
@@ -465,6 +475,9 @@ footer li {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
   }
+  .hebergement {
+    background-color: white;
+  }
 
   /*Populaire*/
 
@@ -473,8 +486,8 @@ footer li {
   }
 
   .asidepopulaire img {
-    width: 17vh;
-    height: 9em;
+    width: 50%;
+    height: 11em;
   }
   .asidepopulaire {
     flex-direction: row;
@@ -484,20 +497,21 @@ footer li {
   .descriptionimgpopulaire {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 100%;
-    height: 8em;
   }
 
-  .hebergement {
-    background-color: white;
+  .imgpopulaire {
+    margin-left: 10px;
+    width: 90vw;
   }
+
+  /*Activité*/
 
   .activite img {
     width: 40vw;
   }
 }
 
-@media screen and (max-width: 950px) /*Tablette*/ {
+@media screen and (max-width: 950px) {
   /*Header*/
 
   .hautheader div:nth-child(2) {
@@ -551,7 +565,7 @@ footer li {
     width: 100%;
   }
 
-  .hebergement h1,
+  .hebergement h2,
   .afficher {
     margin-left: 10px;
   }
@@ -588,7 +602,7 @@ footer li {
   }
 
   .descriptionimgpopulaire {
-    font-size: 85%;
+    height: 11em;
   }
 
   .asidepopulaire img {
@@ -614,6 +628,8 @@ footer li {
   .doubleimage {
     margin-left: 10px;
   }
+
+  /*Footer*/
 
   footer {
     flex-direction: column;

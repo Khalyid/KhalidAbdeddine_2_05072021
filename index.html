@@ -18,6 +18,8 @@
   </head>
   <body>
     <header>
+      <!--------------------HAUT HEADER ----------------->
+
       <div class="hautheader">
         <div>
           <img
@@ -40,6 +42,8 @@
         </div>
       </div>
 
+      <!-------------------TROUVER UN HEBERGEMENT FORMULAIRE------------------->
+
       <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
@@ -57,13 +61,17 @@
         </p>
       </form>
 
+      <!------------------------FILTRES------------------->
+
       <div class="filtreslist">
         <p class="filtres">Filtres</p>
         <div class="button">
-          <button class="btn">
-            <i class="fas fa-money-bill-wave-alt"></i>Economique
-          </button>
-          <button class="btn"><i class="fas fa-child"></i>Familial</button>
+          <div class="test">
+            <button class="btn">
+              <i class="fas fa-money-bill-wave"></i>Economique
+            </button>
+            <button class="btn"><i class="fas fa-child"></i>Familial</button>
+          </div>
           <button class="btn"><i class="fas fa-heart"></i>Romantique</button>
           <button class="btn">
             <i class="fas fa-dog"></i>Animaux autorisés
@@ -71,15 +79,17 @@
         </div>
       </div>
 
-      <p>
-        <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans
-        cette ville
-      </p>
+      <div class="info">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
     </header>
 
     <section class="blochebergement">
+      <!----------------------HEBERGEMENT----------------------->
+
       <article class="hebergement">
-        <h1 id="Hébergements">Hébergements à Marseille</h1>
+        <h2 id="Hébergements">Hébergements à Marseille</h2>
 
         <div class="articlehebergement">
           <a href="">
@@ -196,9 +206,11 @@
         </div>
       </article>
 
+      <!--------------------------PLUS POPULAIRES----------------------->
+
       <aside>
         <div class="titrepopulaire">
-          <h1>Les plus populaires</h1>
+          <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line"></i>
         </div>
 
@@ -211,9 +223,15 @@
                 alt="Chambre d'hotel"
               />
               <figcaption class="descriptionimgpopulaire">
-                <h3>Le soleil du matin</h3>
-                Nuit à partir de <span class="prix">128€</span><br />
-                <div class="etoile">
+                <div>
+                  <h3>
+                    Hôtel Le soleil du <br />
+                    matin
+                  </h3>
+                  <p>Nuit à partir de <span class="prix">128€</span></p>
+                  <br />
+                </div>
+                <div>
                   <i class="fas fa-star etoilebleu"></i>
                   <i class="fas fa-star etoilebleu"></i>
                   <i class="fas fa-star etoilebleu"></i>
@@ -231,8 +249,11 @@
                 alt="Chambre d'hotel"
               />
               <figcaption class="descriptionimgpopulaire">
-                <h3>Au coeur de l'eau <br />Chambres d'hôtes</h3>
-                Nuit à partir de <span class="prix">71€</span><br />
+                <div>
+                  <h3>Au coeur de l'eau <br />Chambres d'hôtes</h3>
+                  <p>Nuit à partir de <span class="prix">71€</span></p>
+                  <br />
+                </div>
                 <div>
                   <i class="fas fa-star etoilebleu"></i>
                   <i class="fas fa-star etoilebleu"></i>
@@ -252,8 +273,11 @@
                 alt="Chambre d'hotel"
               />
               <figcaption class="descriptionimgpopulaire">
-                <h3>Tout bleu et blanc</h3>
-                Nuit à partir de <span class="prix">68€</span><br />
+                <div>
+                  <h3>Tout bleu et blanc</h3>
+                  <p>Nuit à partir de <span class="prix">68€</span></p>
+                  <br />
+                </div>
                 <div>
                   <i class="fas fa-star etoilebleu"></i>
                   <i class="fas fa-star etoilebleu"></i>
@@ -267,8 +291,11 @@
         </div>
       </aside>
     </section>
+
+    <!------------------------ACTIVITES------------------------------>
+
     <section class="sectionactivite">
-      <h1 id="Activités">Activités à Marseille</h1>
+      <h2 id="Activités">Activités à Marseille</h2>
       <div class="activite">
         <div class="grandeimage">
           <a class="port" href="">
@@ -339,6 +366,8 @@
         </div>
       </div>
     </section>
+
+    <!-------------------------FOOTER----------------------------->
 
     <footer>
       <div class="footernav">
