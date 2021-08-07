@@ -116,7 +116,6 @@ h1 {
 }
 .fa-map-marker-alt {
   width: 3em;
-
   background-color: #f2f2f2;
   padding: 1em;
   width: fit-content;
@@ -218,7 +217,7 @@ h1 {
 .articlehebergement {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .articlehebergement img {
@@ -441,7 +440,8 @@ footer li {
 
 /* ----------------------- MEDIA QUERIES ------------------------ */
 
-@media screen and (min-width: 1150px) {
+
+@media screen and (min-width: 1190px) {
   /*Header*/
 
   .submiticon {
@@ -449,7 +449,7 @@ footer li {
   }
 }
 
-@media screen and (min-width: 950px) and (max-width: 1150px) {
+@media screen and (min-width: 950px) and (max-width: 1190px) {
   /*Header*/
   .submiticon {
     display: none;
