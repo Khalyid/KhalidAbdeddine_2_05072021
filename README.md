@@ -1,4 +1,5 @@
-Reservia
+RESERVIA
+
 Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé.
 
 Éléments fournis par l'entreprise virtuelle:
